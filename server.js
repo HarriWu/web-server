@@ -16,7 +16,7 @@ var middleware = {
 app.use(middleware.logger);
 /*app.use(middleware.requireAuthentication);  .use for express applies to every route*/
 app.get('/about',middleware.requireAuthentication, function (req, res) {
-	res.send('About me...');
+	res.send('About me..!!.');
 });
 
 app.use(express.static(__dirname + '/public'));
